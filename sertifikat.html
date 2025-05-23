@@ -1,0 +1,67 @@
+<DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burgers</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+  <div class="logo">Burgers</div>
+  <div class="nav-icons">
+    <i class='bx bx-map'></i>
+    <i class='bx bx-cart'></i>
+    <div class="menu-dropdown">
+      <i class='bx bx-menu'></i>
+      <div class="menu-content">
+        <a href="index.html"><i class='bx bx-home'></i> Bosh bo‘lim</a>
+        <a href="filyal.html"><i class='bx bx-building-house'></i> Filyal</a>
+        <a href="#vakansiya"><i class='bx bx-briefcase'></i> Vakansiya</a>
+        <a href="#sertifikat"><i class='bx bx-certification'></i> Sertifikat</a>
+        <a href="yangilik.html"><i class='bx bx-news'></i> Yangiliklar</a>
+        <a href="aloqa.html"><i class='bx bx-phone'></i> Aloqa</a>
+        <a href="#buyurtma"><i class='bx bx-package'></i> Mening buyurtmam</a>
+      </div>
+    </div>
+  </div>
+</nav>
+  
+
+  
+  <section id="sertifikat" class="certificate-section">
+  <h2>Sertifikatlar</h2>
+  <div class="certificate-container">
+    <div class="certificate-card">
+      <img src="https://marketplace.canva.com/EAFYQBZOIv4/1/0/800w/canva-biru-kuning-sederhana-elegan-sertifikat-seminar-zkrS42UaItE.jpg" alt="Sertifikat 1">
+      <h3>Burger Expert</h3>
+      <p>Professional burger tayyorlash bo‘yicha sertifikat.</p>
+    </div>
+    <div class="certificate-card">
+      <img src="https://1.bp.blogspot.com/-LMbnEXtZoic/V9YCdsHMW5I/AAAAAAAAEDc/-7o3YcQNkSwFRoX4GtTL7X6ikrj4FPS4QCLcB/s1600/magenta+blue+sertifikat+background.jpg" alt="Sertifikat 2">
+      <h3>Fast Food Mastery</h3>
+      <p>Tezkor ovqatlar ustasi bo‘yicha o‘quv kursi.</p>
+    </div>
+    <div class="certificate-card">
+      <img src="https://marketplace.canva.com/EAEqU03p42s/1/0/1600w/canva-sertifikat-piagam-penghargaan-lomba-kompetisi-pidato-simple-purple-uz5sbyCjpbw.jpg" alt="Sertifikat 3">
+      <h3>Sanitary Safety</h3>
+      <p>Gigiyena va xavfsizlik standarti bo‘yicha.</p>
+    </div>
+  </div>
+</section>
+  
+
+  <script src="script.js"></script>
+  
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, '', ''); // URLda #yo'q bo'ladi
+    }
+  }
+</script>
+</body>
+</html>

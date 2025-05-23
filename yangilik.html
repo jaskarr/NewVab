@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burgers</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+  <div class="logo">Burgers</div>
+  <div class="nav-icons">
+    <i class='bx bx-map'></i>
+    <i class='bx bx-cart'></i>
+    <div class="menu-dropdown">
+      <i class='bx bx-menu'></i>
+      <div class="menu-content">
+        <a href="index.html"><i class='bx bx-home'></i> Bosh bo‘lim</a>
+        <a href="filyal.html"><i class='bx bx-building-house'></i> Filyal</a>
+        <a href="#vakansiya"><i class='bx bx-briefcase'></i> Vakansiya</a>
+        <a href="sertifikat.html"><i class='bx bx-certification'></i> Sertifikat</a>
+        <a href="yangilik"><i class='bx bx-news'></i> Yangiliklar</a>
+        <a href="aloqa.html"><i class='bx bx-phone'></i> Aloqa</a>
+        <a href="#buyurtma"><i class='bx bx-package'></i> Mening buyurtmam</a>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+
+  <section id="yangiliklar" class="news-section">
+  <h2>Yangiliklar</h2>
+  <div class="news-container">
+    <div class="news-card">
+      <img src="https://avatars.dzeninfra.ru/get-zen_doc/1587860/pub_5d08d9191be17300ae49902c_5d08d9af1be17300ae499033/scale_1200" alt="Yangilik 1">
+      <h3>Yangi Lavash Menyuda!</h3>
+      <p>Endi bizda maxsus sous bilan yangi lavash turini sinab ko‘ring!</p>
+    </div>
+    <div class="news-card">
+      <img src="https://telegra.ph/file/8ae1c4e6018f3b0fb6aa4.png" alt="Yangilik 2">
+      <h3>Chegirma Haftaligi</h3>
+      <p>Har payshanba — burgerlarga 50% chegirma! Faqat bu oyda!</p>
+    </div>
+    <div class="news-card">
+      <img src="https://telegra.ph/file/ebaa25d37d106e5a4a930.jpg" alt="Yangilik 3">
+      <h3>Yangi Filial Bekobodda</h3>
+      <p>Biz endi Bekobodda hammiz! Manzil va ish vaqtini Aloqa bo‘limidan ko‘ring.</p>
+    </div>
+  </div>
+</section>
+  
+  
+  <script src="script.js"></script>
+  
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, '', ''); // URLda #yo'q bo'ladi
+    }
+  }
+</script>
+</body>
+</html>

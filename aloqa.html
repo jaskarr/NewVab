@@ -1,0 +1,64 @@
+<DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burgers</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+  <div class="logo">Burgers</div>
+  <div class="nav-icons">
+    <i class='bx bx-map'></i>
+    <i class='bx bx-cart'></i>
+    <div class="menu-dropdown">
+      <i class='bx bx-menu'></i>
+      <div class="menu-content">
+        <a href="index.html"><i class='bx bx-home'></i> Bosh bo‘lim</a>
+        <a href="filyal.html"><i class='bx bx-building-house'></i> Filyal</a>
+        <a href="#vakansiya"><i class='bx bx-briefcase'></i> Vakansiya</a>
+        <a href="sertifikat.html"><i class='bx bx-certification'></i> Sertifikat</a>
+        <a href="yangilik.html"><i class='bx bx-news'></i> Yangiliklar</a>
+        <a href="#aloqa"><i class='bx bx-phone'></i> Aloqa</a>
+        <a href="#buyurtma"><i class='bx bx-package'></i> Mening buyurtmam</a>
+      </div>
+    </div>
+  </div>
+</nav>
+  
+
+<section id="aloqa" class="contact-section">
+  <h2>Aloqa</h2>
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Ismingiz</label>
+      <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Manzilingiz</label>
+      <input type="text" id="address" name="address" placeholder="Manzilingizni kiriting" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Telefon raqamingiz</label>
+      <input type="tel" id="phone" name="phone" placeholder="+998..." required>
+    </div>
+    <button type="submit">Yuborish</button>
+  </form>
+</section>
+  
+
+  <script src="script.js"></script>
+  
+  <script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, '', ''); // URLda #yo'q bo'ladi
+    }
+  }
+</script>
+</body>
+</html>
