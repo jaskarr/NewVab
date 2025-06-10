@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #ff69b4, #fcd116); /* pushti + sariq */
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-icons a {
+  margin-left: 15px;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff7f0;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #ff1493;
+  border-bottom: 1px solid #fdd835;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #fcd116;
+}
+.hero {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  background: #ff1493;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-buttons .btn:hover {
+  background: #fcd116;
+  color: black;
+}
+.categories {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.categories button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #ff1493;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categories button:hover {
+  background: #fcd116;
+  color: black;
+}
+
+.product-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.product {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.product button {
+  background: #ff1493;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product button:hover {
+  background: #fcd116;
+  color: black;
+}
+
+
+
+.cart-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Filial bo‘limi */
+#filial-section {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.filial {
+  display: flex;
+  gap: 20px;
+  background: #ffd6e8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(240, 128, 169, 0.3);
+}
+
+.filial img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.filial-info h3 {
+  margin: 0 0 8px;
+  color: #d81e5b;
+}
+
+.filial-info p {
+  margin: 4px 0;
+  font-size: 0.9em;
+  color: #6a2c70;
+}
+
+.filial-info i {
+  margin-right: 6px;
+  color: #f06292;
+}
+
+
+.yangiliklar h2 {
+  text-align: center;
+  color: #d81b60;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  display: flex;
+  background: #fff0f5;
+  border-left: 5px solid #f06292;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.news-card:hover {
+  transform: scale(1.01);
+}
+
+.news-card img {
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.news-content h3 {
+  color: #c2185b;
+  margin-bottom: 8px;
+}
+
+.news-content p {
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #999;
+}

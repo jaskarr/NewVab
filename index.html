@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biza Yang</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Burgers</div>
+    <div class="nav-icons">
+      <a href="#"><i class='bx bx-map'></i></a>
+<a href="cart.html"><i class='bx bx-cart'></i> <span id="cart-count">0</span></a>
+      <a href="#" id="menu-btn"><i class='bx bx-menu'></i></a>
+    </div>
+  </nav>
+
+  <div class="menu" id="menu">
+    <a href="#">Bosh sahifa</a>
+    <a href="filyal.html">Filial</a>
+    <a href="vakansiya.html">Vakansiya</a>
+    <a href="#">Sertifikat</a>
+    <a href="yangiliklar.html">Yangiliklar</a>
+    <a href="#">Aloqa</a>
+    <a href="#">Toʻlov uslubi</a>
+  </div>
+  
+  
+  
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Fast Food Xizmatlari</h1>
+    <p>Bizda eng tez, issiq va mazali taomlar sizni kutmoqda. Xavfsiz, toza va sifatli xizmat!</p>
+    <div class="hero-buttons">
+      <a href="#"><button class="btn">Buyurtma berish</button></a>
+      <a href="#"><button class="btn">Menu</button></a>
+    </div>
+  </div>
+</section>
+  
+  
+  
+  
+  <!-- Kategoriya Tugmalari -->
+<div class="categories">
+  <button onclick="scrollToSection('burger')">Burger</button>
+  <button onclick="scrollToSection('sendvich')">Sendvich</button>
+  <button onclick="scrollToSection('lavash')">Lavash</button>
+  <button onclick="scrollToSection('ichimlik')">Ichimliklar</button>
+  <button onclick="scrollToSection('kartoshka')">Kartoshka Free</button>
+</div>
+
+<!-- Mahsulotlar Bo‘limlari -->
+<div class="product-section" id="burger">
+  <h2>Burger</h2>
+  <div class="product">
+    <img src="https://i.pinimg.com/originals/95/aa/34/95aa34722ae9ea7e8faa874e5d24ebab.png" alt="Burger">
+    <h3>Cheeseburger</h3>
+    <p>25 000 so'm</p>
+    <button onclick="addToCart('Cheeseburger', 25000)">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://s.yimg.com/ny/api/res/1.2/TE9Qbe2ebMNSOvfCU9nbIg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MzU-/https://media.zenfs.com/en/usa_today_money_325/90540eeed705e375cda31b332349dcf0" alt="Burger">
+    <h3>Sirni Burger</h3>
+    <p>25 000 so'm</p>
+    <button onclick="addToCart('Cheeseburger', 25000)">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://g-a.ru/upload/iblock/e23/6v5j75qs25ib88elvtfu028chc69oiuc.png" alt="Burger">
+    <h3>Mini Burger</h3>
+    <p>16 000 so'm</p>
+    <button onclick="addToCart('Cheeseburger', 25000)">Sotib olish</button>
+  </div>
+</div>
+
+<div class="product-section" id="sendvich">
+  <h2>Sendvich</h2>
+  <div class="product">
+    <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/106/950/999/912/231/948/100046981662b0.png" alt="Sendvich">
+    <h3>Chicken Sandwich</h3>
+    <p>20 000 so'm</p>
+    <button onclick="addToCart('Chicken Sandwich')">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/106/950/999/912/231/948/100046981662b0.png" alt="Sendvich">
+    <h3>Mini Sandwich</h3>
+    <p>16 000 so'm</p>
+    <button onclick="addToCart('Chicken Sandwich')">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/106/950/999/912/231/948/100046981662b0.png" alt="Sendvich">
+    <h3> Sirril Sandwich</h3>
+    <p>20 000 so'm</p>
+    <button onclick="addToCart('Chicken Sandwich')">Sotib olish</button>
+  </div>
+</div>
+
+<div class="product-section" id="lavash">
+  <h2>Lavash</h2>
+  <div class="product">
+    <img src="https://avatars.mds.yandex.net/get-altay/374295/2a0000015b1701f357d45c338ce9f51be50b/orig" alt="Lavash">
+    <h3>Lavash Max</h3>
+    <p>28 000 so'm</p>
+    <button onclick="addToCart('Lavash Max')">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://avatars.mds.yandex.net/get-altay/374295/2a0000015b1701f357d45c338ce9f51be50b/orig" alt="Lavash">
+    <h3>Lavash Big</h3>
+    <p>37 000 so'm</p>
+    <button onclick="addToCart('Lavash Max')">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://avatars.mds.yandex.net/get-altay/374295/2a0000015b1701f357d45c338ce9f51be50b/orig" alt="Lavash">
+    <h3>Lavash Mini</h3>
+    <p>17 000 so'm</p>
+    <button onclick="addToCart('Lavash Max')">Sotib olish</button>
+  </div>
+</div>
+
+<div class="product-section" id="ichimlik">
+  <h2>Ichimliklar</h2>
+  <div class="product">
+    <img src="https://avatars.mds.yandex.net/get-mpic/5266697/img_id7729084579981413580.png/orig" alt="Ichimlik">
+    <h3>Coca-Cola</h3>
+    <p>10 000 so'm</p>
+    <button onclick="addToCart('Coca-Cola')">Sotib olish</button>
+  </div>
+  
+  
+  
+  <div class="product">
+    <img src="https://vkusmart.vmv.kz/upload/iblock/21e/21ea10bcd42e0730759e6bcad7de4e63.jpg" alt="Ichimlik">
+    <h3>Pepsi</h3>
+    <p>10 000 so'm</p>
+    <button onclick="addToCart('Coca-Cola')">Sotib olish</button>
+  </div>
+</div>
+
+<div class="product-section" id="kartoshka">
+  <h2>Kartoshka Free</h2>
+  <div class="product">
+    <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/179/295/049/314/124/100030786773b1.jpg" alt="Kartoshka">
+    <h3>Kartoshka Free</h3>
+    <p>12 000 so'm</p>
+    <button onclick="addToCart('Kartoshka Fri')">Sotib olish</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
